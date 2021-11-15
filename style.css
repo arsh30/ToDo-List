@@ -1,0 +1,68 @@
+/* sbse pehle body k pass bydefault margin hota h usko remove kro */
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color:  blanchedalmond;
+    color: black;
+    /* color jo h vo text ka h */
+}
+.container,
+.input-container,
+.task-container{
+    border: 1px solid black;
+}
+.input-container{
+    /* margin-top: 2px; */
+    height: 20vh;
+    text-align: center;
+    /* align-items: flex-end ; */
+    padding-top: 25px;
+    /* try padding as much as we can coz margin is not much better in some cases */
+}
+.task-container{ 
+    /* whole body */
+    height: 80vh;
+}
+.task-input{  
+    /* this is the input type box */
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 1.5rem;
+    font-style: italic;
+    height: 4rem;
+    width: 40%;
+    margin: auto;
+    display: block;
+
+}
+.task-list{
+    text-align: center;
+    list-style-position: inside;
+    font-style: italic;
+    padding-left: 0px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+.task-container li{
+    font-size: 1.5rem;
+    list-style: none;
+    background-color: rgba(134, 9, 34, 0.911);
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    margin : 5px auto 0px auto;
+    height: 40px;
+    margin-top: 15px; 
+    /* overflow: scroll; */
+}
+
+@media screen and (max-width : 768px){
+    .task-input,
+    .input-container li {
+        width: 70%;
+    }   
+}
